@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Human Resource Portal</title>
+    <link rel="icon" href="./images/bird-colorful-gradient-design-vector_343694-2506.avif">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #cee2fd;
+        }
+
+        header{
+            background-color: #395c60;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+        footer{
+            background-color:#395c60;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem{
+            display: inline;
+            padding: 15px
+        }
+
+        .navitem a{
+            text-decoration: none;
+            color: rgb(226, 240, 253);
+        }
+
+        .registerform{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .employeetable{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,td{
+            border: 1px solid #9fb8bb;
+            padding: 8px;
+        }
+
+        .contactus{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to company HR Portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav><br><br>
+    </header>
+
+    <image src="images/organic-flat-working-day-scene-illustration_23-2148958758.avif" style="width: 100%" height="300"></image>
+
+    <section id="employee-registration" class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill thr form given below to register as <em>employee.</em></p>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name"><br><br>
+
+            <label for="email">Email Id: </label>
+            <input type="email" id="email"><br><br>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password"><br><br>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age"><br><br>
+
+            <label for="role">Select Role: </label>
+            <select>
+                <option>Software Engineer</option>
+                <option>Product Manager</option>
+                <option>Designer</option>
+                <option>HR Representative</option>
+            </select><br><br>
+
+            <label for="joningdate">Enter Date of joining: </label>
+            <input type="date" id="joningdate"><br><br>
+
+            <input type="submit"><br><br>
+        </form>
+    </section>
+
+    <section id="employee-directory" class="employeetable">
+        <h2>Employee Directory</h2>
+        <p>List of all registered employees.</p>
+        <table> 
+            <tr>
+                <th>Emp_ID</th>
+                <th>Emp_Name</th>
+                <th>Role</th>
+            </tr>
+
+            <tr>
+                <td>212</td>
+                <td>Dishambha Awasthi</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>213</td>
+                <td>Jai Dixit</td>
+                <td>Product Manager</td>
+            </tr>
+            <tr>
+                <td>214</td>
+                <td>Raman Singh</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>215</td>
+                <td>Virat Kohli</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>216</td>
+                <td>Rohit Sharma</td>
+                <td>HR Representative</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact-us" class="contactus">
+        <h2>Contact Us</h2>
+        <p>You can contact us at company@official.com or visit us between 9AM - 6PM.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.012252980146!2d81.01469327499348!3d26.80773847670982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3695fdee5b9%3A0x6e5e1b063a8d1873!2sEkana%20International%20Cricket%20Stadium%20Rd%2C%20Ardonamau%2C%20Uttar%20Pradesh%20226002!5e0!3m2!1sen!2sin!4v1712259931391!5m2!1sen!2sin" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Company Name</p>
+    </footer>
+</body>
+</html>
